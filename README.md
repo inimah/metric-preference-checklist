@@ -14,3 +14,30 @@ Code implementation and Datasets for the ACL2023 Paper **"NLG Evaluation Metrics
   * [3 Aspect-level Evaluation](#3-aspect-eval)
   * [4 System-level Evaluation](#4-system-eval)
 * [Citation](#citation)
+
+## Prerequisites
+
+```bash
+conda create -n nlgeval_env python=3.7
+conda activate nlgeval_env
+conda install cudatoolkit=10.1 -c pytorch -n nlgeval_env
+
+pip install -r requirements.txt
+```
+
+## Computing Infrastructure
+
+- GPU: ASUS Turbo GeForce GTX 1080 Ti ( RAM, 3584 CUDA cores, compute capability 6.1); CPU Intel Xeon Broadwell-EP 2683v4 @ 2.1GHz (64 hyperthreads, RAM: 1024GB).
+- OS: Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-138-generic x86_64)
+
+## Quick Start
+
+#### 1. Structuring Data
+
+#### 2. Transfer Experiment
+
+#### 3. Aspect Evaluation
+
+#### 4. System Evaluation
+
+### Citation
