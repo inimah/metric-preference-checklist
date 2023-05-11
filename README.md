@@ -4,7 +4,7 @@
 
 Code implementation and Datasets for the ACL2023 Paper **"NLG Evaluation Metrics Beyond Correlation Analysis: An Empirical Metric Preference Checklist"**
 
-### Contents
+## Contents
 
 * [Prerequisites](#prerequisites)
 * [Quick Start](#quick-start)
@@ -40,4 +40,4 @@ pip install -r requirements.txt
 - GPU: ASUS Turbo GeForce GTX 1080 Ti ( RAM, 3584 CUDA cores, compute capability 6.1); CPU Intel Xeon Broadwell-EP 2683v4 @ 2.1GHz (64 hyperthreads, RAM: 1024GB).
 - OS: Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-138-generic x86_64)
 
-### Citation
+## Citation
