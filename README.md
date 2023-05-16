@@ -47,7 +47,7 @@ pip install -r requirements.txt
   **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)<br><br>
   
 
-- **Newsroom** (Grusky et al., 2018)
+- **Newsroom** (Grusky et al., 2018)<br>
   This dataset is not accompanied by ground truth references. So, for measuring the performance with reference-based metrics or nearly reference-less metrics, we use the source (ArticleText) as a means of reference.<br>
   **ArticleID**   : The unique ID of the article<br>
   **ArticleText**      : Text source before summarized by the systems<br>
