@@ -39,6 +39,7 @@ pip install -r requirements.txt
   **Consistency** : Consistency rating by human evaluators (scale 1-5)<br>
   **Fluency**     : Fluency rating by human evaluators (scale 1-5)<br>
   **Relevance**   : Relevance rating by human evaluators (scale 1-5)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
   **BLEU-n**      : BLEU score for the given output<br>
   **ROUGE-n**     : ROUGE score for the given output<br>
   **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
@@ -58,6 +59,7 @@ pip install -r requirements.txt
   **InformativenessRating** : Informativeness rating by human evaluators (scale 1-5)<br>
   **FluencyRating**     : Fluency rating by human evaluators (scale 1-5)<br>
   **RelevanceRating**   : Relevance rating by human evaluators (scale 1-5)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
   **BLEU**      : BLEU score for the given output<br>
   **ROUGE**     : ROUGE score for the given output<br>
   **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
@@ -81,6 +83,7 @@ pip install -r requirements.txt
   **Engaging**   : Engagingness rating by human evaluators (scale 1-3)<br>
   **UsesKnowledge**   : Engagingness rating by human evaluators (scale 1-3)<br>
   **Overall**   : Overall rating by human evaluators (scale 1-5)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
   **BLEU**      : BLEU score for the given output<br>
   **ROUGE**     : ROUGE score for the given output<br>
   **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
@@ -100,6 +103,7 @@ pip install -r requirements.txt
   **Engaging**   : Engagingness rating by human evaluators (scale 1-3)<br>
   **UsesKnowledge**   : Engagingness rating by human evaluators (scale 1-3)<br>
   **Overall**   : Overall rating by human evaluators (scale 1-5)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
   **BLEU**      : BLEU score for the given output<br>
   **ROUGE**     : ROUGE score for the given output<br>
   **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
@@ -109,8 +113,50 @@ pip install -r requirements.txt
 
 ##### Controlled Generation
 - **UBER-PPLM** ((Dathathri et al., 2020))<br>
+  This dataset is an open-ended task (no ground truth references).<br>
+  **Prefix**      : A word (two words) at the beginning of the sentence as a cue for Language Model to continue the word(s) and complete them into a sentence or full text <br>
+  **Text**     : Systems'generation outputs<br>
+  **Domain**     : Topic category as a control attribute<br>
+  **Annotator**       : The annotator for the corresponding human ratings<br>
+  **Model**    : NLG System as text generator. See Appendix of the paper or the original paper for more detail information<br>
+  **Pairtxt**  : Model pair given to the annotators<br>
+  **Fluency**     : Fluency rating by human evaluators (scale 1-5)<br>
+  **Relevance**   : Relevance rating by human evaluators (binary scale 0/1)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
+  **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
+  **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
+  **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
+  
 - **CTRL** (Keskar et al., 2019)<br>
+  This dataset is an open-ended task (no ground truth references).<br>
+  **Prefix**      : A word (two words) at the beginning of the sentence as a cue for Language Model to continue the word(s) and complete them into a sentence or full text <br>
+  **Text**     : Systems'generation outputs<br>
+  **Domain**     : Topic category as a control attribute<br>
+  **Annotator**       : The annotator for the corresponding human ratings<br>
+  **Model**    : NLG System as text generator. See Appendix of the paper or the original paper for more detail information<br>
+  **Pairtxt**  : Model pair given to the annotators<br>
+  **Fluency**     : Fluency rating by human evaluators (scale 1-5)<br>
+  **Relevance**   : Relevance rating by human evaluators (binary scale 0/1)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
+  **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
+  **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
+  **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
+  
 - **CTRL-Eval** (Ke et al., 2022) <br>
+  This dataset is an open-ended task (no ground truth references).<br>
+  **Prefix**      : A word (two words) at the beginning of the sentence as a cue for Language Model to continue the word(s) and complete them into a sentence or full text <br>
+  **Text**     : Systems'generation outputs<br>
+  **Attribute**     : Topic category as a control attribute<br>
+  **Coherence**   : Coherence rating by human evaluators (scale 1-5)<br>
+  **Consistency** : Consistency rating by human evaluators (scale 1-5)<br>
+  **Relevance**   : Relevance rating by human evaluators (binary scale 0/1)<br>
+  **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
+  **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
+  **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
+  **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
 
 #### 2. Transfer Experiment
 
