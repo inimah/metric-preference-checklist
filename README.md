@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 #### 1. Structuring Data
 
-##### Text Summarization
+#### Text Summarization
 - **SummEval** (Fabbri et al., 2021)<br>
   **Source**      : Text source before summarized by the systems<br>
   **Decoded**     : Systems'generation outputs<br>
@@ -69,7 +69,7 @@ pip install -r requirements.txt
   
 
 
-##### Dialogue Response Generation
+#### Dialogue Response Generation
 
 - **USR-Topical Chat** (Mehri and Eskenazi, 2020)<br>
   **Fact**   : The factual context of the article<br>
@@ -111,7 +111,7 @@ pip install -r requirements.txt
   **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
   **UniEval**     : UniEval scores (Aspect: Understandability, Naturalness, Coherence, Engagingness, Groundedness, Overall)<br><br>
 
-##### Controlled Generation
+#### Controlled Generation
 - **UBER-PPLM** ((Dathathri et al., 2020))<br>
   This dataset is an open-ended task (no ground truth references).<br>
   **Prefix**      : A word (two words) at the beginning of the sentence as a cue for Language Model to continue the word(s) and complete them into a sentence or full text <br>
