@@ -47,7 +47,24 @@ pip install -r requirements.txt
   **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)<br><br>
   
 
-- Newsroom (Grusky et al., 2018)
+- **Newsroom** (Grusky et al., 2018)
+  This dataset is not accompanied by ground truth references. So, for measuring the performance with reference-based metrics or nearly reference-less metrics, we use the source (ArticleText) as a means of reference.<br>
+  **ArticleID**   : The unique ID of the article<br>
+  **ArticleText**      : Text source before summarized by the systems<br>
+  **SystemSummary**     : Systems'generation outputs<br>
+  **ArticleTitle**       : Title of the article<br>
+  **System**      : NLG System to execute the summarization task. See Appendix of the paper or the original paper for more detail information<br>
+  **CoherenceRating**   : Coherence rating by human evaluators (scale 1-5)<br>
+  **InformativenessRating** : Informativeness rating by human evaluators (scale 1-5)<br>
+  **FluencyRating**     : Fluency rating by human evaluators (scale 1-5)<br>
+  **RelevanceRating**   : Relevance rating by human evaluators (scale 1-5)<br>
+  **BLEU**      : BLEU score for the given output<br>
+  **ROUGE**     : ROUGE score for the given output<br>
+  **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
+  **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
+  **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Relevance)<br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)<br><br>
+  
 - USR-Topical Chat
 - USR Persona Chat
 
