@@ -30,6 +30,24 @@ pip install -r requirements.txt
 #### 1. Structuring Data
 
 ##### Text Summarization
+- SummEval (Fabbri et al., 2021)
+  Source      : Text source before summarized by the systems
+  Decoded     : Systems'generation outputs
+  Ref-n       : Ground truth human references (11 references are provided)
+  Model-ID    : See Appendix of the paper or the original paper for more detail information
+  Coherence   : Coherence rating by human evaluators (scale 1-5)
+  Consistency : Consistency rating by human evaluators (scale 1-5)
+  Fluency     : Fluency rating by human evaluators (scale 1-5)
+  Relevance   : Relevance rating by human evaluators (scale 1-5)
+  BLEU-n      : BLEU score for the given output
+  ROUGE-n     : ROUGE score for the given output
+  BERTScore   : BERTscore for the given output (Precision, Recall, F1)
+  CTC 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)
+  CtrlEval    : CtrlEval scores (Aspect: Coherence)
+  UniEval     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)
+  
+
+- Newsroom (Grusky et al., 2018)
 
 ##### Dialogue Response Generation
 
