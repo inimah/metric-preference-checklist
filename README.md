@@ -178,9 +178,21 @@ We consider three (3) metrics under this category. Prior to computing the evalua
 
 #### 4. Aspect Evaluation
 
+```
+\notebooks\Quality-Eval.ipynb
+```
+
 #### 5. System Evaluation
 
+```
+\notebooks\System-Eval.ipynb
+```
+
 #### 6. Pairwise Comparison
+
+```
+\notebooks\Pairwise_System_Ranking.ipynb
+```
 
 ## Computing Infrastructure
 
