@@ -2,16 +2,18 @@
 [![jupyter](https://img.shields.io/badge/Jupyter-Lab-F37626.svg?style=flat&logo=Jupyter)](https://jupyterlab.readthedocs.io/en/stable)
 [![pytorch](https://img.shields.io/badge/PyTorch-1.11.0-EE4C2C.svg?style=flat&logo=pytorch)](https://pytorch.org)
 
-Code implementation and Datasets for the ACL2023 Paper **"NLG Evaluation Metrics Beyond Correlation Analysis: An Empirical Metric Preference Checklist"**
+Code implementation and Datasets for the ACL2023 Paper **"NLG Evaluation Metrics Beyond Correlation Analysis: An Empirical Metric Preference Checklist"** [ArxiV](https://arxiv.org/abs/2305.08566)
 
 ## Contents
 
 * [Prerequisites](#prerequisites)
 * [Quick Start](#quick-start)
   * [1 Structuring Human Evaluation Data](#1-structuring-data)
-  * [2 Transfer Experiment](#2-transfer-experiment) 
-  * [3 Aspect-level Evaluation](#3-aspect-eval)
-  * [4 System-level Evaluation](#4-system-eval)
+  * [2 Human-aligned Metrics](#2-human-aligned-metrics)
+  * [3 Transfer Experiment](#3-transfer-experiment) 
+  * [4 Aspect-level Evaluation](#4-aspect-evaluation)
+  * [5 System-level Evaluation](#5-system-evaluation)
+  * [6 Pairwise Comparison](#6-pairwise-comparison)
 * [Computing Infrastructure](#computing-infrastructure)
 * [Citation](#citation)
 
@@ -158,11 +160,51 @@ pip install -r requirements.txt
   **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
   **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
 
-#### 2. Transfer Experiment
+#### 2. Human-aligned Metrics
 
-#### 3. Aspect Evaluation
+We consider three (3) metrics under this category. Prior to computing the evaluation scores of the given system outputs (above datasets), the following Python implementation of the metrics need to be installed.<br>
+- **CTC** (Deng et al., 2021)<br>
+  [https://github.com/tanyuqian/ctc-gen-eval](https://github.com/tanyuqian/ctc-gen-eval)<br><br>
+- **CTRLEval** (Ke et al., 2022)<br>
+  [https://github.com/thu-coai/ctrleval](https://github.com/thu-coai/ctrleval)<br><br>
+- **UniEval** (Zhong et al., 2022)<br>
+  [https://github.com/maszhongming/unieval](https://github.com/maszhongming/unieval)<br><br>
+  
 
-#### 4. System Evaluation
+Prior to running the following scripts, do not forget to modify the environment name in the script.<br>
+
+| Automatic Metric                                                |  Benchmark               |   Bash script                                                |
+| ---------------------------------------------------- | ------------------------ | ------------------------------------------------------------ |
+| Perplexity                                             | Text Summarization |  scripts/run_autom_newsroom.sh                           |
+| BLEU, ROUGE                                             | Dialogue Generation   |  scripts/run_autom_ctrlDiag.sh                              |
+| BERTScore                                               | Controlled Generation    |  scripts/run_autom_uber.sh                                |
+| CTC                                         | Sentiment Classification |  scripts/                       |
+| CTRLEval                                         | Intent Classification    |  scripts/                          |
+| UniEval                                       | Sentiment Classification |  scripts/                   |
+
+#### 3. Transfer Experiment
+
+```
+\notebooks\Plot Transfer Correlation.ipynb
+```
+
+#### 4. Aspect Evaluation
+
+```
+\notebooks\Quality-Eval.ipynb
+```
+
+#### 5. System Evaluation
+
+```
+\notebooks\System-Eval.ipynb
+```
+
+#### 6. Pairwise Comparison
+
+```
+\notebooks\Pairwise_System_Ranking.ipynb
+```
 
 ## Computing Infrastructure
 
