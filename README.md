@@ -162,6 +162,14 @@ pip install -r requirements.txt
 
 #### 2. Human-aligned Metrics
 
+We consider three (3) metrics under this category. Prior to computing the evaluation scores of the given system outputs (above datasets), the following Python implementation of the metrics need to be installed.<br>
+- **CTC** (Deng et al., 2021)<br>
+  [https://github.com/tanyuqian/ctc-gen-eval](https://github.com/tanyuqian/ctc-gen-eval)<br><br>
+- **CTRLEval** (Ke et al., 2022)<br>
+  [https://github.com/thu-coai/ctrleval](https://github.com/thu-coai/ctrleval)<br><br>
+- **UniEval** (Zhong et al., 2022)<br>
+  [https://github.com/maszhongming/unieval](https://github.com/maszhongming/unieval)<br><br>
+
 #### 3. Transfer Experiment
 
 #### 4. Aspect Evaluation
