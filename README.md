@@ -30,8 +30,8 @@ pip install -r requirements.txt
 #### 1. Structuring Data
 
 ##### Text Summarization
-- SummEval (Fabbri et al., 2021)
-  Source      : Text source before summarized by the systems
+- SummEval (Fabbri et al., 2021)\n
+  Source      : Text source before summarized by the systems\n
   Decoded     : Systems'generation outputs
   Ref-n       : Ground truth human references (11 references are provided)
   Model-ID    : See Appendix of the paper or the original paper for more detail information
