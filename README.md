@@ -29,6 +29,28 @@ pip install -r requirements.txt
 
 #### 1. Structuring Data
 
+##### Text Summarization
+
+##### Dialogue Response Generation
+
+##### Controlled Generation
+
+For adopting our framework on your own datasets, we list the required attributes for each evaluation metrics, as follows:
+
+##### Language Model-based Perplexity
+
+##### BLEU
+
+##### ROUGE
+
+##### BERTScore
+
+##### Single-aspect CTC
+
+##### Single-aspect CtrlEval
+
+##### Multi-aspect UniEval
+
 #### 2. Transfer Experiment
 
 #### 3. Aspect Evaluation
