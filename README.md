@@ -169,6 +169,16 @@ We consider three (3) metrics under this category. Prior to computing the evalua
   [https://github.com/thu-coai/ctrleval](https://github.com/thu-coai/ctrleval)<br><br>
 - **UniEval** (Zhong et al., 2022)<br>
   [https://github.com/maszhongming/unieval](https://github.com/maszhongming/unieval)<br><br>
+  
+  
+| Automatic Metric                                                |  Benchmark               |   Bash script                                                |
+| ---------------------------------------------------- | ------------------------ | ------------------------------------------------------------ |
+| Perplexity                                             | Text Summarization |  scripts/run_autom_newsroom.sh                           |
+| BLEU, ROUGE                                             | Dialogue Generation   |  scripts/run_autom_ctrlDiag.sh                              |
+| BERTScore                                               | Controlled Generation    |  scripts/run_autom_uber.sh                                |
+| CTC                                         | Sentiment Classification |  scripts/                       |
+| CTRLEval                                         | Intent Classification    |  scripts/                          |
+| UniEval                                       | Sentiment Classification |  scripts/                   |
 
 #### 3. Transfer Experiment
 
