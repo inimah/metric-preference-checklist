@@ -9,9 +9,11 @@ Code implementation and Datasets for the ACL2023 Paper **"NLG Evaluation Metrics
 * [Prerequisites](#prerequisites)
 * [Quick Start](#quick-start)
   * [1 Structuring Human Evaluation Data](#1-structuring-data)
-  * [2 Transfer Experiment](#2-transfer-experiment) 
-  * [3 Aspect-level Evaluation](#3-aspect-eval)
-  * [4 System-level Evaluation](#4-system-eval)
+  * [2 Human-aligned Metrics](#1-human-aligned-metrics)
+  * [3 Transfer Experiment](#2-transfer-experiment) 
+  * [4 Aspect-level Evaluation](#3-aspect-eval)
+  * [5 System-level Evaluation](#4-system-eval)
+  * [6 Pairwise Comparison](#4-pairwise-comparison)
 * [Computing Infrastructure](#computing-infrastructure)
 * [Citation](#citation)
 
@@ -158,11 +160,15 @@ pip install -r requirements.txt
   **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
   **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
 
-#### 2. Transfer Experiment
+#### 2. Human-aligned Metrics
 
-#### 3. Aspect Evaluation
+#### 3. Transfer Experiment
 
-#### 4. System Evaluation
+#### 4. Aspect Evaluation
+
+#### 5. System Evaluation
+
+#### 6. Pairwise Comparison
 
 ## Computing Infrastructure
 
