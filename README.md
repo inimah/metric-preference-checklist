@@ -108,22 +108,9 @@ pip install -r requirements.txt
   **UniEval**     : UniEval scores (Aspect: Understandability, Naturalness, Coherence, Engagingness, Groundedness, Overall)<br><br>
 
 ##### Controlled Generation
-
-For adopting our framework on your own datasets, we list the required attributes for each evaluation metrics, as follows:
-
-##### Language Model-based Perplexity
-
-##### BLEU
-
-##### ROUGE
-
-##### BERTScore
-
-##### Single-aspect CTC
-
-##### Single-aspect CtrlEval
-
-##### Multi-aspect UniEval
+- **UBER-PPLM** ((Dathathri et al., 2020))<br>
+- **CTRL** (Keskar et al., 2019)<br>
+- **CTRL-Eval** (Ke et al., 2022) <br>
 
 #### 2. Transfer Experiment
 
