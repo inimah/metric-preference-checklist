@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ##### Text Summarization
 - **SummEval** (Fabbri et al., 2021)<br>
   **Source**      : Text source before summarized by the systems<br>
-  **Decoded**     : Systems'generation outputs<br>  
+  **Decoded**     : Systems'generation outputs<br>
   **Ref-n**       : Ground truth human references (11 references are provided)<br>
   **Model-ID**    : See Appendix of the paper or the original paper for more detail information<br>
   **Coherence**   : Coherence rating by human evaluators (scale 1-5)<br>
