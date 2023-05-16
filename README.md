@@ -44,11 +44,11 @@ pip install -r requirements.txt
   **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
   **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
   **CtrlEval**    : CtrlEval scores (Aspect: Coherence)<br>
-  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)<br><br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
   
 
 - **Newsroom** (Grusky et al., 2018)<br>
-  This dataset is not accompanied by ground truth references. So, for measuring the performance with reference-based metrics or nearly reference-less metrics, we use the source (ArticleText) as a means of reference.<br>
+  This dataset is not accompanied with ground truth references. So, for measuring the performance with reference-based metrics or nearly reference-less metrics, we use the source (ArticleText) as a means of reference.<br>
   **ArticleID**   : The unique ID of the article<br>
   **ArticleText**      : Text source before summarized by the systems<br>
   **SystemSummary**     : Systems'generation outputs<br>
@@ -63,12 +63,32 @@ pip install -r requirements.txt
   **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
   **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
   **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Relevance)<br>
-  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)<br><br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance, Overall)<br><br>
   
-- USR-Topical Chat
-- USR Persona Chat
+
 
 ##### Dialogue Response Generation
+
+- USR-Topical Chat (Mehri and Eskenazi, 2020)<br>
+  **Fact**   : The factual context of the article<br>
+  **Context**      : The preceding conversation as the context for responses<br>
+  **Response**     : Responses from the systems or human<br>
+  **Annotators**       : The annotator for the corresponding human ratings<br>
+  **Model**      : NLG System to execute the response generation task. See Appendix of the paper or the original paper for more detail information<br>
+  **Understandable**   : Understandable rating by human evaluators (binary scale 0/1, 0=not understandable, 1=understandable)<br>
+  **Natural** : Naturalness rating by human evaluators (scale 1-3, 1=not natural, 2=neutral/moderate, 3=good)<br>
+  **MaintainsContext**     : Rating by human evaluators for maintaining context (scale 1-3)<br>
+  **Engaging**   : Engagingness rating by human evaluators (scale 1-3)<br>
+  **UsesKnowledge**   : Engagingness rating by human evaluators (scale 1-3)<br>
+  **Overall**   : Overall rating by human evaluators (scale 1-5)<br>
+  **BLEU**      : BLEU score for the given output<br>
+  **ROUGE**     : ROUGE score for the given output<br>
+  **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
+  **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Engagingness, Groundedness)<br>
+  **CtrlEval**    : CtrlEval scores (Aspect: Coherence, Consistency, Relevance)<br>
+  **UniEval**     : UniEval scores (Aspect: Understandability, Naturalness, Coherence, Engagingness, Groundedness, Overall)<br><br>
+  
+- USR Persona Chat (Mehri and Eskenazi, 2020)<br>
 
 ##### Controlled Generation
 
