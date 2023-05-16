@@ -32,22 +32,24 @@ pip install -r requirements.txt
 ##### Text Summarization
 - **SummEval** (Fabbri et al., 2021)<br>
   **Source**      : Text source before summarized by the systems<br>
-  Decoded     : Systems'generation outputs<br>  
-  Ref-n       : Ground truth human references (11 references are provided)<br>
-  Model-ID    : See Appendix of the paper or the original paper for more detail information
-  Coherence   : Coherence rating by human evaluators (scale 1-5)
-  Consistency : Consistency rating by human evaluators (scale 1-5)
-  Fluency     : Fluency rating by human evaluators (scale 1-5)
-  Relevance   : Relevance rating by human evaluators (scale 1-5)
-  BLEU-n      : BLEU score for the given output
-  ROUGE-n     : ROUGE score for the given output
-  BERTScore   : BERTscore for the given output (Precision, Recall, F1)
-  CTC 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)
-  CtrlEval    : CtrlEval scores (Aspect: Coherence)
-  UniEval     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)
+  **Decoded**     : Systems'generation outputs<br>  
+  **Ref-n**       : Ground truth human references (11 references are provided)<br>
+  **Model-ID**    : See Appendix of the paper or the original paper for more detail information<br>
+  **Coherence**   : Coherence rating by human evaluators (scale 1-5)<br>
+  **Consistency** : Consistency rating by human evaluators (scale 1-5)<br>
+  **Fluency**     : Fluency rating by human evaluators (scale 1-5)<br>
+  **Relevance**   : Relevance rating by human evaluators (scale 1-5)<br>
+  **BLEU-n**      : BLEU score for the given output<br>
+  **ROUGE-n**     : ROUGE score for the given output<br>
+  **BERTScore**   : BERTscore for the given output (Precision, Recall, F1)<br>
+  **CTC** 	       : CTC scores (Method: Embedding-based, Discriminative, Regression; Aspect: Consistency, Relevance)<br>
+  **CtrlEval**    : CtrlEval scores (Aspect: Coherence)<br>
+  **UniEval**     : UniEval scores (Aspect: Coherence, Consistency, Fluency, Relevance)<br><br>
   
 
 - Newsroom (Grusky et al., 2018)
+- USR-Topical Chat
+- USR Persona Chat
 
 ##### Dialogue Response Generation
 
