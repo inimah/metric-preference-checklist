@@ -170,7 +170,9 @@ We consider three (3) metrics under this category. Prior to computing the evalua
 - **UniEval** (Zhong et al., 2022)<br>
   [https://github.com/maszhongming/unieval](https://github.com/maszhongming/unieval)<br><br>
   
-  
+
+Prior to running the following scripts, do not forget to modify the environment name in the script.<br>
+
 | Automatic Metric                                                |  Benchmark               |   Bash script                                                |
 | ---------------------------------------------------- | ------------------------ | ------------------------------------------------------------ |
 | Perplexity                                             | Text Summarization |  scripts/run_autom_newsroom.sh                           |
