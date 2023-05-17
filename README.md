@@ -80,10 +80,10 @@ pip install -r requirements.txt
   **Annotators**       : The annotator for the corresponding human ratings<br>
   **Model**      : NLG System to execute the response generation task. See Appendix of the paper or the original paper for more detail information<br>
   **Understandable**   : Understandable rating by human evaluators (binary scale 0/1, 0=not understandable, 1=understandable)<br>
-  **Natural** : Naturalness rating by human evaluators (scale 1-3, 1=not natural, 2=neutral/moderate, 3=good)<br>
+  **Natural** : Naturalness rating by human evaluators (scale 1-3, 1=not natural, 2=somewhat/moderate, 3=good)<br>
   **MaintainsContext**     : Rating by human evaluators for maintaining context (scale 1-3)<br>
   **Engaging**   : Engagingness rating by human evaluators (scale 1-3)<br>
-  **UsesKnowledge**   : Engagingness rating by human evaluators (scale 1-3)<br>
+  **UsesKnowledge**   : Engagingness rating by human evaluators (binary scale 0/1)<br>
   **Overall**   : Overall rating by human evaluators (scale 1-5)<br>
   **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
   **BLEU**      : BLEU score for the given output<br>
@@ -103,7 +103,7 @@ pip install -r requirements.txt
   **Natural** : Naturalness rating by human evaluators (scale 1-3, 1=not natural, 2=neutral/moderate, 3=good)<br>
   **MaintainsContext**     : Rating by human evaluators for maintaining context (scale 1-3)<br>
   **Engaging**   : Engagingness rating by human evaluators (scale 1-3)<br>
-  **UsesKnowledge**   : Engagingness rating by human evaluators (scale 1-3)<br>
+  **UsesKnowledge**   : Engagingness rating by human evaluators (binary scale 0/1)<br>
   **Overall**   : Overall rating by human evaluators (scale 1-5)<br>
   **Perplexity**   : Perplexity score for the given output (based on pretrained Language Model)<br>
   **BLEU**      : BLEU score for the given output<br>
