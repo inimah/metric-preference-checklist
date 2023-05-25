@@ -53,23 +53,16 @@ def parse_args():
 def read_data(args):
 
   datadir = args.output_dir
-  #file = 'newsroom.csv'
-  #file = 'newsroom_Bin.csv'
-  #file = 'newsroom_autom.csv'
-  files = ["train.csv", "val.csv", "test.csv"]
+  file = 'newsroom.csv'
   
   print(datadir)
-  #print(file)
-  print(files)
-
-  #data_df = pd.read_csv(os.path.join(datadir, file))
-
-  train_df = pd.read_csv(os.path.join(datadir, files[0]))
-  val_df = pd.read_csv(os.path.join(datadir, files[1]))
-  test_df = pd.read_csv(os.path.join(datadir, files[2]))
-
   
-  return train_df, val_df, test_df
+
+  data_df = pd.read_csv(os.path.join(datadir, file))
+
+ 
+  
+  return data_df
 
 
 def compute_perplexity_df(data):
@@ -216,7 +209,6 @@ if __name__ == "__main__":
     print("Computing BERTScore...")
     new_df = compute_bertscore_df(new_df)
 
-    #outdir = os.path.join(args.output_dir, 'uber_%s.csv'%(args.attribute))
     outdir = os.path.join(args.output_dir, 'newsroom_auto.csv')
     new_df.to_csv(outdir)
     

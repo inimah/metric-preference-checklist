@@ -164,10 +164,8 @@ if __name__ == "__main__":
     # computing BERTScore 
 
     print("Computing BERTScore for all data...")
-    #new_datadf = compute_bertscore_df(args, data_df)
     new_datadf = compute_bertscore_df(args, new_df)
 
-    #outdir = os.path.join(args.output_dir, 'uber_%s.csv'%(args.attribute))
     outdir = os.path.join(args.output_dir, 'uber_%s_auto.csv'%(args.attribute))
     new_datadf.to_csv(outdir)
 
