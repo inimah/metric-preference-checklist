@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 #### 1. Structuring Data
 
-Datasets we provided in ~/data has included scores based on human and automatic metrics in this study (including human-aligned metrics).<br>
+Datasets we provided in ~/data have included scores based on human and automatic metrics in this study (including human-aligned metrics).<br>
 
 #### Text Summarization
 - **SummEval** (Fabbri et al., 2021)<br>
@@ -172,7 +172,7 @@ We consider three (3) metrics under this category. Prior to computing the evalua
 - **UniEval** (Zhong et al., 2022)<br>
   [https://github.com/maszhongming/unieval](https://github.com/maszhongming/unieval)<br><br>
   
-Datasets we provided in ~/data has included scores based on human and automatic metrics in this study (including human-aligned metrics).<br>
+Datasets we provided in ~/data have included scores based on human and automatic metrics in this study (including human-aligned metrics).<br>
 However, if you would like to run the automatic metrics on your own datasets, you can see below examples of code implementation.<br>
 Prior to running the following scripts, do not forget to modify the environment name in the script.<br>
 
@@ -181,9 +181,15 @@ Prior to running the following scripts, do not forget to modify the environment 
 | Perplexity, BLEU, ROUGE, BERTScore                   | Text Summarization |  scripts/run_autom_newsroom.sh                           |
 | Perplexity, BLEU, ROUGE, BERTScore                                              | Dialogue Generation   |  scripts/                             |
 | Perplexity, BLEU, ROUGE, BERTScore                                                | Controlled Generation    |  scripts/run_autom_uber.sh                                |
-| CTC                                         | Sentiment Classification |  scripts/                       |
-| CTRLEval                                         | Intent Classification    |  scripts/                          |
-| UniEval                                       | Sentiment Classification |  scripts/                   |
+| CTC                                         | Text Summarization |  scripts/                       |
+| CTC                                         | Dialogue Generation |  scripts/                       |
+| CTC                                         | Controlled Generation |  scripts/                       |
+| CTRLEval                                         |  Text Summarization   |  scripts/                          |
+| CTRLEval                                         |  Dialogue Generation  |  scripts/                          |
+| CTRLEval                                         |  Controlled Generation   |  scripts/                          |
+| UniEval                                       |  Text Summarization |  scripts/                   |
+| UniEval                                       |  Dialogue Generation |  scripts/                   |
+| UniEval                                       |  Controlled Generation |  scripts/                   |
 
 #### 3. Transfer Experiment
 
