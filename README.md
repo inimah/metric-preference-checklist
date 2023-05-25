@@ -179,17 +179,9 @@ Prior to running the following scripts, do not forget to modify the environment 
 | Automatic Metric                                                |  Benchmark               |   Bash script                                                |
 | ---------------------------------------------------- | ------------------------ | ------------------------------------------------------------ |
 | Perplexity, BLEU, ROUGE, BERTScore                   | Text Summarization |  scripts/run_autom_newsroom.sh                           |
-| Perplexity, BLEU, ROUGE, BERTScore                                              | Dialogue Generation   |  scripts/                             |
-| Perplexity, BLEU, ROUGE, BERTScore                                                | Controlled Generation    |  scripts/run_autom_uber.sh                                |
-| CTC                                         | Text Summarization |  scripts/                       |
-| CTC                                         | Dialogue Generation |  scripts/                       |
-| CTC                                         | Controlled Generation |  scripts/                       |
-| CTRLEval                                         |  Text Summarization   |  scripts/                          |
-| CTRLEval                                         |  Dialogue Generation  |  scripts/                          |
-| CTRLEval                                         |  Controlled Generation   |  scripts/                          |
-| UniEval                                       |  Text Summarization |  scripts/                   |
-| UniEval                                       |  Dialogue Generation |  scripts/                   |
-| UniEval                                       |  Controlled Generation |  scripts/                   |
+| Perplexity, BLEU, ROUGE, BERTScore                   | Controlled Generation    |  scripts/run_autom_uber.sh                                |
+| UniEval                                       |  Text Summarization |  scripts/run_unieval_summ.sh                   |
+| UniEval                                       |  Dialogue Generation |  scripts/run_unieval_tc.sh                   |
 
 #### 3. Transfer Experiment
 
