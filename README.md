@@ -213,3 +213,30 @@ Prior to running the following scripts, do not forget to modify the environment 
 - OS: Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-138-generic x86_64)
 
 ## Citation
+
+```BibTeX
+@inproceedings{nimah-etal-2023-nlg,
+    title = "{NLG} Evaluation Metrics Beyond Correlation Analysis: An Empirical Metric Preference Checklist",
+    author = "Nimah, Iftitahu  and
+      Fang, Meng  and
+      Menkovski, Vlado  and
+      Pechenizkiy, Mykola",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.69",
+    doi = "10.18653/v1/2023.acl-long.69",
+    pages = "1240--1266",
+    abstract = "In this study, we analyze automatic evaluation metrics for Natural Language Generation (NLG), specifically task-agnostic metrics and human-aligned metrics. Task-agnostic metrics, such as Perplexity, BLEU, BERTScore, are cost-effective and highly adaptable to diverse NLG tasks, yet they have a weak correlation with human. Human-aligned metrics (CTC, CtrlEval, UniEval) improves correlation level by incorporating desirable human-like qualities as training objective. However, their effectiveness at discerning system-level performance and quality of system outputs remain unclear. We present metric preference checklist as a framework to assess the effectiveness of automatic metrics in three NLG tasks: Text Summarization, Dialogue Response Generation, and Controlled Generation. Our proposed framework provides access: (i) for verifying whether automatic metrics are faithful to human preference, regardless of their correlation level to human; and (ii) for inspecting the strengths and limitations of NLG systems via pairwise evaluation. We show that automatic metrics provide a better guidance than human on discriminating system-level performance in Text Summarization and Controlled Generation tasks. We also show that multi-aspect human-aligned metric (UniEval) is not necessarily dominant over single-aspect human-aligned metrics (CTC, CtrlEval) and task-agnostic metrics (BLEU, BERTScore), particularly in Controlled Generation tasks.",
+}
+
+```
+
+----
+
+Issues and pull requests are welcomed.
